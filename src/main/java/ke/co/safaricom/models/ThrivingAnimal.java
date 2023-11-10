@@ -36,4 +36,18 @@ public class ThrivingAnimal extends Animal{
         this.animalType = type;
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object otherThrivingAnimal) {
+        if (otherThrivingAnimal instanceof ThrivingAnimal) {
+            ThrivingAnimal newThrivingAnimal = (ThrivingAnimal) otherThrivingAnimal;
+            return (this.getAnimalName().equals(newThrivingAnimal.getAnimalName()));
+        }
+        return false;
+    }
+
 }
