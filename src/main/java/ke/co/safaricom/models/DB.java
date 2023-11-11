@@ -1,7 +1,7 @@
 package ke.co.safaricom.models;
 
 import org.sql2o.*;
-import org.sql2o.Sql2o;
+
 public class DB {
     //Use when running project locally
 //    private static final Sql2o connect = new Sql2o(

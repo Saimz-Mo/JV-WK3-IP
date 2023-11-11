@@ -1,6 +1,8 @@
 package ke.co.safaricom.models;
 
 import java.util.List;
+import org.sql2o.Connection;
+import org.sql2o.Sql2oException;
 
 public class EndangeredAnimalDao {
     public void getDrivers(){
