@@ -1,0 +1,99 @@
+{{#partial "header"}}
+    <br>
+    <head>
+        <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+                integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH"
+                crossorigin="anonymous"
+        />
+    </head>
+    <body
+            id="background"
+            style="
+      background-image: url(/images/zebra.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+    >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">Wildlife-Tracker</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/animals">Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sightings">Sightings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+{{/partial}}
+
+{{#partial "content"}}
+    <br> <br>
+    <div
+            style="
+        background-color: RGB(145, 134, 89, 0.7);
+        width: 60%;
+        margin-left: 20%;
+        padding: 10%;
+      "
+    >
+        <h2 style="color: #000000">List of Sightings</h2>
+        <h6 style="color: #000000" >
+            <ol>
+                {{#each sightings}}
+                    <li> {{ranger}}
+                        <span style="color: #ff0000">
+                            {{location}}
+                        </span>
+                        {{age}}
+                        <span  style="color: #fff">
+                            Animal ID: {{animalId}}
+                        </span>
+                        Time Seen: {{timestamp}}
+                        <h6><a href="/sightings/{{id}}/edit">Update</a></h6>
+                        <h6><a href="/sightings/{{id}}/delete">Delete</a></h6>
+                    </li>
+                {{/each}}
+            </ol>
+        </h6>
+        <br />
+        <div class="d-inline-flex">
+            <form action="/sightings" method="post" >
+                <button  class="btn btn-dark" type="submit">Add Sighting</button>
+            </form>
+
+        </div>
+        <br />
+    </div>
+    <br />
+{{/partial}}
+{{#partial "footer"}}
+    <br><br><br><br>
+{{/partial}}
+{{>layout.hbs}}
