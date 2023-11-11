@@ -1,0 +1,137 @@
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel = "stylesheet" href="/css/index.css">
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+            integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH"
+            crossorigin="anonymous"
+    />
+    <title>Wildlife-Tracker</title>
+</head>
+<body
+
+>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">Wildlife-Tracker</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/animals">Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sightings">Sightings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 d-inline-flex" style="padding: 15%">
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem; margin-right: 5%">
+                <img
+                        class="card-img-top"
+                        src="/images/zebra.jpeg"
+                        alt=""
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Thriving Animals</h5>
+                    <p class="card-text">
+                    <form action="/thriving" >
+
+                        <button type="submit" class="btn btn-warning btn-sm">
+                            Add
+                        </button>
+                    </form>
+                    </p>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem; margin-right: 5%">
+                <img
+                        class="card-img-top"
+                        src="/images/tiger.jpg"
+                        alt=""
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Endangered Animals</h5>
+                    <p class="card-text">
+                    <form action="/endangered" >
+
+                        <button type="submit" class="btn btn-warning btn-sm">
+                            Add
+                        </button>
+                    </form>
+                    </p>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem">
+                <img
+                        class="card-img-top"
+                        src="/images/giraff.jpg"
+                        alt=""
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Sightings</h5>
+                    <p class="card-text">
+                    <form action="/sightings/new" >
+
+                        <button type="submit" class="btn btn-warning btn-sm">
+                            Add
+                        </button>
+                    </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <ol
+            class="text-success"
+            style="
+        font-size: larger;
+        list-style: none;
+        padding: 3%;
+        padding-left: 40%;
+      "
+            style="font-weight: 1000px"
+    >
+        <li>© 2023 All Rights Reserved</li>
+    </ol>
+</div>
+<script
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+        integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>
