@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+            integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/page.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Wildlife-Tracker</title>
+</head>
+<body
+        id="background"
+        style="
+      background-image: url(/images/images.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    "
+>
+<br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">Wildlife-Tracker</a>
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/animals">Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sightings">Sightings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br /><br /><br />
+
+<br />
+<div
+        style="
+        background-color: RGB(145, 134, 89, 0.7);
+        width: 55%;
+        margin-left: 25%;
+        padding: 15%;
+      "
+>
+    <form action="/endangered" method="post" class="">
+        <br />
+        <div class="form-group" style="padding: 5%">
+            <label for="animal" class="text-warning">Endangered Animal Name</label>
+            <input
+                    type="text"
+                    required
+                    class="form-control"
+                    name="name"
+                    id="name"
+                    style="width: 300px; margin-left: -5%"
+            />
+            <br />
+        </div>
+        <div class="form-group">
+            <label for="health" class="text-warning">Health</label>
+            <select
+                    class="form-control"
+                    style="width: 300px"
+                    name="health"
+                    id="health"
+                    type="text"
+                    required
+            >
+                <option>Healthy</option>
+                <option>Okay</option>
+                <option>Sick</option>
+            </select>
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="age" class="text-warning">Age</label>
+            <select
+                    class="form-control"
+                    style="width: 300px"
+                    name="age"
+                    id="age"
+                    type="text"
+                    required
+            >
+                <option>Newborn</option>
+                <option>Young</option>
+                <option>Adult</option>
+            </select>
+            <br />
+        </div>
+
+        <button type="submit" class="btn btn-warning">Add</button>
+</div>
+<br />
+</form>
+</div>
+
+</body>
+<!-- footer -->
+<br><br><br><br>
+<script
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/minty/bootstrap.min.css"
+        integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG"
+        crossorigin="anonymous"
+></script>
+</html>
