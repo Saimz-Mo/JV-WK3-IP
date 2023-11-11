@@ -1,0 +1,12 @@
+body{
+      background-image: url("/images/forest.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+img{
+height: 50%;
+width:50%;
+
+
+}
